@@ -1,9 +1,12 @@
 # projet_sisn
-Projet SISN: Traitement d’image basé sur la perception visuelle
+Projet SISN : Traitement d’image basé sur la perception visuelle
 
+## Exécution du projet avec environnement virtuel
 
-## Pour bien executer le projet, on passe par un environnement virtuel:
+Pour bien exécuter le projet, suivez les étapes suivantes :
 
-> cd /chemin/vers/ton/projet
-> source venv/bin/activate
-> python debruite.py (par exemple)
+```bash
+cd /chemin/vers/le/projet
+source venv/bin/activate
+python debruite.py  # par exemple
+deactivate
