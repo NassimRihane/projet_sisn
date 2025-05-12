@@ -3,12 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Chargement d'une image bruitée
-img = cv2.imread('image_bruitee.jpg')
+img = cv2.imread('exemples/image_bruitee.jpg')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 # Application du filtre bilatéral
 img_denoised = cv2.bilateralFilter(img, d=5, sigmaColor=50, sigmaSpace=50)
-dst_color = cv2.fastNlMeansDenoisingColored(img, None, h=8, hColor=10, templateWindowSize=3, searchWindowSize=21)
+dst_color = cv2.fastNlMeansDenoisingColored(img, None, h=18, hColor=10, templateWindowSize=3, searchWindowSize=21)
 
 # Affichage
 plt.figure(figsize=(10,5))
