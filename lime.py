@@ -58,7 +58,7 @@ def enhance(img, illum, gamma=0.7):
 
 # Exemple d’utilisation
 if __name__ == "__main__":
-    path = "exemples/film_sombre.jpg"
+    path = "images_transformees/emma_faible_luminosite.jpg"
     img = cv2.imread(path)
     img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 

@@ -71,7 +71,7 @@ def SSR(img, variance):
 variance_list=[30, 90, 150]
 variance=330
     
-img = cv2.imread('exemples/film_sombre.jpg')
+img = cv2.imread('images_transformees/emma_faible_luminosite.jpg')
 img_msr=MSR(img,variance_list)
 img_ssr=SSR(img, variance)
 
